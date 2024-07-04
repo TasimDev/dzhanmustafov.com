@@ -171,9 +171,7 @@ h3 {
   position: relative;
   overflow: hidden;
   z-index: -1;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  
 }
 
 .testimonial:nth-child(1) {
@@ -308,4 +306,8 @@ button{
   bottom: -20%;
   color: rgb(102, 102, 102);
   z-index: -1;
+}
+#excell{
+  width: 60px;
+  height: 50px;
 }
