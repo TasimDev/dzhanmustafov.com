@@ -189,7 +189,11 @@ h3 {
 .testimonial:nth-child(5) {
   grid-area: five;
 }
-
+@media screen and (max-width: 1200px) {
+  body{
+    padding-top: 50px;
+  }
+}
 @media screen and (min-width: 33em) {
   .widgets-grid {
       grid-template-areas:
