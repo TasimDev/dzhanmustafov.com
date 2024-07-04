@@ -290,6 +290,7 @@ button{
 }
 .btn.white{
   background: #fff;
+  color: #000;
 }
 .btn.black{
   background: #000;
