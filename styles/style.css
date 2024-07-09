@@ -102,8 +102,8 @@ body {
 
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
-  background: rgb(61,62,66);
-  background: radial-gradient(circle, rgba(61,62,66,1) 0%, rgba(0,0,0,1) 84%);
+  background: rgb(61, 62, 66);
+  background: radial-gradient(circle, rgba(61, 62, 66, 1) 0%, rgba(0, 0, 0, 1) 84%);
 }
 
 h1,
@@ -118,16 +118,18 @@ h3 {
   gap: var(--gap, 1rem);
 }
 
-.flow > *:where(:not(:first-child)) {
+.flow>*:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
 
 .bg-primary-400 {
-  background:#E41E2B;
+  background: #E41E2B;
 }
+
 .bg-secondary-400 {
   background: #808080;
 }
+
 .bg-secondary-500 {
   background: #000000;
 }
@@ -139,9 +141,11 @@ h3 {
 .text-neutral-100 {
   color: hsl(var(--clr-neutral-100));
 }
+
 .text-secondary-400 {
   color: hsl(var(--clr-secondary-400));
 }
+
 .border-primary-400 {
   border: 2px solid #a775f1;
 }
@@ -152,11 +156,11 @@ h3 {
   gap: 1.5rem;
   grid-auto-columns: 1fr;
   grid-template-areas:
-   'one'
-   'two'
-   'three'
-   'four'
-   'five';
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
 
   padding-block: 2rem;
   width: min(95%, 70rem);
@@ -170,33 +174,39 @@ h3 {
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
   position: relative;
   overflow: hidden;
-  z-index: -1;
-  
+
+
 }
 
 .testimonial:nth-child(1) {
   grid-area: one;
 }
+
 .testimonial:nth-child(2) {
   grid-area: two;
 }
+
 .testimonial:nth-child(3) {
   grid-area: three;
 }
+
 .testimonial:nth-child(4) {
   grid-area: four;
 }
+
 .testimonial:nth-child(5) {
   grid-area: five;
 }
+
 @media screen and (max-width: 1200px) {
-  body{
+  body {
     padding-top: 50px;
   }
 }
+
 @media screen and (min-width: 33em) {
   .widgets-grid {
-      grid-template-areas:
+    grid-template-areas:
       "one one"
       "two three"
       "five five"
@@ -207,16 +217,16 @@ h3 {
 @media screen and (min-width: 38em) {
   .widgets-grid {
     grid-template-areas:
-     'one one'
-     'two five'
-     'three five'
-     'four four';
+      'one one'
+      'two five'
+      'three five'
+      'four four';
   }
 }
 
 @media screen and (min-width: 54em) {
-  .widgets-grid{
-      grid-template-areas:
+  .widgets-grid {
+    grid-template-areas:
       "one one two"
       "five five five"
       "three four four";
@@ -225,7 +235,7 @@ h3 {
 
 @media screen and (min-width: 75em) {
   .widgets-grid {
-      grid-template-areas:
+    grid-template-areas:
       "one one two five"
       "three four four five";
   }
@@ -249,15 +259,17 @@ h3 {
   height: 100%;
 }
 
-.logo{
+
+.logo {
   position: absolute;
   width: 50px;
   left: 15px;
   top: 15px;
 }
-.menu{
+
+.menu {
   position: absolute;
-  
+
   right: 15px;
   top: 15px;
 
@@ -265,10 +277,12 @@ h3 {
   justify-content: space-evenly;
   gap: 15px;
 }
-.menu li{
+
+.menu li {
   list-style: none;
 }
-.menu li a{
+
+.menu li a {
   display: inline-block;
   color: #fff;
   font-size: 1.5rem;
@@ -278,12 +292,15 @@ h3 {
   position: relative;
 
 }
-.menu li a i{
+
+.menu li a i {
   position: absolute;
-  top: 50%; right: 50%;
-  transform: translate(50%,-50%);
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
-button{
+
+button {
   border: none;
   outline: none;
   padding: 5px 15px;
@@ -292,19 +309,23 @@ button{
   z-index: 100;
   width: 125px;
 }
-.btn.white{
+
+.btn.white {
   background: #fff;
   color: #000;
 }
-.btn.black{
+
+.btn.black {
   background: #000;
   color: #fff;
 }
-.btn.gray{
+
+.btn.gray {
   background: rgb(197, 197, 197);
   color: #fff;
 }
-#database-icon{
+
+#database-icon {
   position: absolute;
   font-size: 15rem;
   right: -20%;
@@ -312,7 +333,10 @@ button{
   color: rgb(102, 102, 102);
   z-index: -1;
 }
-#excell{
+
+
+
+#excell {
   width: 60px;
   height: 50px;
 }
