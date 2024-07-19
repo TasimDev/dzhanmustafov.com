@@ -100,7 +100,7 @@ select {
 body {
   display: grid;
   place-content: center;
-  min-height: 100vh;
+ 
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
   background: rgb(61, 62, 66);
@@ -359,7 +359,7 @@ button {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
-  display: flex;
+  display: none;
   gap: 1rem;
   justify-content: space-between;
   opacity: 0;
@@ -370,6 +370,7 @@ button {
 
 
 .window.open {
+  display: flex;
   opacity: 1;
   transform: translateZ(-100%);
   z-index: 1;
