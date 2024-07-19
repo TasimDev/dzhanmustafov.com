@@ -172,8 +172,12 @@ h3 {
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;
+  opacity: 1;
+  transition: all .3s ease-in-out;
 }
-
+.widgets-grid.close{
+  opacity: 0;
+}
 .testimonial {
   font-size: var(--fs-400);
   padding: 2rem;
@@ -361,7 +365,16 @@ button {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  opacity: 0;
+  transform: translateZ(-100%);
+  transition: all .3s ease-in-out;
+  z-index: -1;
+}
 
+.window.open {
+  opacity: 1;
+  transform: translateZ(-100%);
+  z-index: 1;
 }
 
 .window .icon-x {
