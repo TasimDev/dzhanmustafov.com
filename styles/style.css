@@ -420,6 +420,18 @@ button {
   background-color: #D62929;
 }
 
+.window#about .info::-webkit-scrollbar-track {
+  display: none;
+}
+
+.window#about .info::-webkit-scrollbar {
+  display: none;
+}
+
+.window#about .info::-webkit-scrollbar-thumb {
+  display: none;
+}
+
 .window .image {
   width: 30%;
 }
@@ -527,7 +539,8 @@ a {
   .window .info::-webkit-scrollbar-thumb {
     display: none;
   }
-  .window .icon-x{
+
+  .window .icon-x {
     top: 2rem;
     right: 2rem;
   }
