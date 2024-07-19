@@ -500,5 +500,7 @@ a {
     width: 100%;
     flex-direction: row;
   }
-  
+  .window .image img{
+    width: 100%;
+  }
 }
