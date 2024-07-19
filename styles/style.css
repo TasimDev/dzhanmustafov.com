@@ -28,7 +28,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Remove default margin */
@@ -177,6 +177,7 @@ h3 {
 }
 .widgets-grid.close{
   opacity: 0;
+  display: none;
 }
 .testimonial {
   font-size: var(--fs-400);
@@ -357,7 +358,7 @@ button {
   z-index: 10;
   top: 50%;
   right: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(50%,-50%);
   background: #fff;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -370,7 +371,21 @@ button {
   transition: all .3s ease-in-out;
   z-index: -1;
 }
+@media screen and (max-width: 700px){
+  .window{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5rem;
+  }
 
+  .window .info{
+    width: 100%;
+  }
+  .window .image {
+    width: 100%;
+  }
+}
 .window.open {
   opacity: 1;
   transform: translateZ(-100%);
@@ -400,7 +415,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 60%;
+ 
   padding: 0 1rem;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -425,9 +440,8 @@ button {
 }
 
 .window .image {
-  width: 30%;
+ width: 30%;
   float: right;
-
 }
 
 .window .image img {
