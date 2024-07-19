@@ -499,6 +499,7 @@ a {
   .window .image {
     width: 100%;
     flex-direction: row;
+    display: none;
   }
   .window .image img{
     width: 100%;
